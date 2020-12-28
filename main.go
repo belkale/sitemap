@@ -45,5 +45,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(XMLPrefix + string(xmlStr))
+	fmt.Print(xml.Header)
+	fmt.Println(string(xmlStr))
 }
